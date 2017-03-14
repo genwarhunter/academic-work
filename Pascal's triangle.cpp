@@ -4,6 +4,7 @@
 
 
 
+
 int comb(int k, int n, int** mass);
 
 int main() {

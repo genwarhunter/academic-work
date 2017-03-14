@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include <stdlib.h>
 
+
 int comparison(const int *a, const int *b)
 {
 	return(*a - *b);
