@@ -31,6 +31,12 @@ int main()
 	printf("%d\n", color);
 	for (int i = 0; i < size; i++)
 		printf("%d ", buffer[i]);
+	for (int i = 0; i<size; i++)
+	{
+		free(graph[i]);
+	}
+	free(graph);
+	free(buffer);
     return 0;
 }
 
