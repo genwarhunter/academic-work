@@ -1,0 +1,2 @@
+gcc -c main.c
+gcc -o Game main.o -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
