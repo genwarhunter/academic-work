@@ -1,0 +1,18 @@
+#include <iostream>
+
+#include <md5.h>
+#include <hex.h>
+#include <filters.h>
+#include <files.h>
+
+using namespace std;
+
+int main()
+{
+	CryptoPP::MD5 md5;
+	string source = "input.txt";
+	CryptoPP::FileSource(source.c_str(), true, new CryptoPP::HashFilter(md5, new CryptoPP::HexEncoder(new CryptoPP::FileSink("output.txt",false))));
+	std::cout << "Complite"<< std::endl;
+	system("pause");
+	return 0;
+}
